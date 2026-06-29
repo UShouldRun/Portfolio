@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Henrique Teixeira</title>
+
+  <link 
+    rel="icon"
+    href="
+      data:image/svg+xml,
+      <svg xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 100 100'><text x='0%' y='80%' font-size='70' font-weight='600'
+        font-family='sans-serif' fill='%2393bfeb'>HT</text></svg>
+      "
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+
+  <script src="js/main.js" defer></script>
+  <script src="js/sidebar-component.js" defer></script>
+</head>
+<body>
+  <div class="layout">
+
+    <app-sidebar></app-sidebar>
+
+    <!-- Mobile nav toggle -->
+    <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open navigation">
+      <svg viewBox="0 0 24 24">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+
+    <!-- Main -->
+    <main class="main">
+
+      <section class="section animate-fade-up">
+        <p class="section-label">About</p>
+        <!--
+        <h2 style="font-size: 2rem; margin-bottom: 1rem;">
+          Building things at the intersection of<br/>hardware, AI and software.
+        </h2>
+        -->
+        <p style="max-width: 560px; margin-bottom: 1.5rem;">
+          I’m a final-year undergraduate student in Artificial Intelligence 
+          and Data Science at the University of Porto (FCUP),
+          with a strong focus on programming languages, compiler design,
+          low-level systems and software performance optimization.
+        </p>
+        <p style="max-width: 560px;">
+          Outside of research I lead development of the website for
+          <a href="https://www.javardemica.org" target="_blank" rel="noopener">Tuna de Ciências do Porto</a>,
+          a student musical group I play in
+          and mentor a team of 8 student contributors building it.
+        </p>
+      </section>
+
+      <!--
+      <hr class="divider" />
+
+      <section class="section animate-fade-up">
+        <p class="section-label">Highlights</p>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-value">2×</span>
+            <span class="stat-label">Academic excellence scholarship</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">#1</span>
+            <span class="stat-label">Best CTM CS&amp;E internship</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">2</span>
+            <span class="stat-label">Papers co-authored</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">125 MHz</span>
+            <span class="stat-label">FPGA throughput, LNSU</span>
+          </div>
+        </div>
+      </section>
+      -->
+
+      <hr class="divider" />
+
+      <section class="section animate-fade-up">
+        <p class="section-label">Now</p>
+        <div class="entry" style="border-top: none; padding-top: 0;">
+          <div class="entry-date">02/2025 – Now</div>
+          <div class="entry-body">
+            <div class="entry-title">Web Application Developer</div>
+            <div class="entry-sub">Tuna de Ciências do Porto · Porto, Portugal</div>
+            <div class="entry-desc">
+              Co-developed and maintain a full-stack platform to manage events, members, instruments
+              and organizational workflow for a student musical group, automating previously manual processes.
+            </div>
+          </div>
+        </div>
+
+        <div class="entry" style="border-top: none; padding-top: 0;">
+          <div class="entry-date">02/2026 – 07/2026</div>
+          <div class="entry-body">
+            <div class="entry-title">Researcher · INESC TEC</div>
+            <div class="entry-sub">AIMaCoV: ONNX Graph Mapping to RISC-V CGRA</div>
+            <div class="entry-desc">
+              Mentoring an undergraduate intern and co-authoring a paper on GNN-guided DFG partitioning onto CGRAs.
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 1rem;">
+          <a 
+            href="experience"
+            style="font-size: 0.85rem; color: var(--accent); display: inline-flex; align-items: center; gap: 6px;"
+          >
+            Full experience
+            <svg 
+              width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            >
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!--
+      <hr class="divider" />
+
+      <section class="section animate-fade-up">
+        <p class="section-label">Stack</p>
+        <div class="tags">
+          <span class="tag">C</span>
+          <span class="tag">C++</span>
+          <span class="tag">Go</span>
+          <span class="tag">Python</span>
+          <span class="tag">Java</span>
+          <span class="tag">HLS</span>
+          <span class="tag">React</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Docker</span>
+          <span class="tag">GCP</span>
+          <span class="tag">RISC-V</span>
+          <span class="tag">FPGA</span>
+        </div>
+      </section>
+      -->
+
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Experience · Henrique Teixeira</title>
+  
+  <link 
+    rel="icon"
+    href="
+      data:image/svg+xml,
+      <svg xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 100 100'><text x='0%' y='80%' font-size='70' font-weight='600'
+        font-family='sans-serif' fill='%2393bfeb'>HT</text></svg>
+      "
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/sidebar-component.js" defer></script>
+</head>
+<body>
+  <div class="layout">
+
+    <app-sidebar></app-sidebar>
+
+    <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open navigation">
+      <svg viewBox="0 0 24 24">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+
+    <main class="main">
+
+      <div class="page-header animate-fade-up">
+        <h2>Experience</h2>
+        <p>Research, internships and projects in industry and academia.</p>
+      </div>
+
+      <!-- Research -->
+      <section class="section">
+        <p class="section-label">Research</p>
+
+        <div class="entry reveal">
+          <div class="entry-date">02/2026 – 07/2026</div>
+          <div class="entry-body">
+            <div class="entry-title">
+              Researcher: AIMaCoV 
+              <span class="badge badge-info" style="margin-left:8px;">
+                Current
+              </span>
+            </div>
+            
+            <div class="entry-sub">INESC TEC · Porto, Portugal</div>
+
+            <div class="entry-desc">
+              <ul>
+                <li>
+                  Mentoring an undergraduate student alongside a colleague on their
+                  curricular internship in compiler-time NN approaches for CGRA mapping.
+                </li>
+                <li>
+                  Co-authoring a paper (06/2026) introducing a GNN-guided partitioning 
+                  flow for Data-Flow Graphs onto CGRAs: ~30% reduction in edge cuts,
+                  98% mapping success rate, ~50× speedup over exact SAT solvers.
+                </li>
+                <li>
+                  Guided the intern in combining deterministic algorithms with learned heuristics
+                  for an NP-hard mapping problem.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tags" style="margin-top: 0.75rem;">
+              <span class="tag">
+                GNN
+              </span>
+              <span class="tag">
+                CGRA
+              </span>
+              <span class="tag">
+                RISC-V
+              </span>
+              <span class="tag">
+                ONNX
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="entry reveal">
+          <div class="entry-date">09/2025 – 01/2026</div>
+          <div class="entry-body">
+            <div class="entry-title">Researcher: AIQ-Ready</div>
+
+            <div class="entry-sub">INESC TEC · Porto, Portugal</div>
+
+            <div class="entry-desc">
+              <ul>
+                <li>
+                  Assessed viability of converting ONNX models to C via ONNX2C and 
+                  profiled compute-heavy nodes in the output.
+                </li>
+                <li>
+                  Selected bottleneck nodes for hardware acceleration on XHeep/RISC-V and
+                  evaluated combined SW + accelerated results.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tags" style="margin-top: 0.75rem;">
+              <span class="tag">
+                ONNX
+              </span>
+              <span class="tag">
+                RISC-V
+              </span>
+              <span class="tag">
+                C
+              </span>
+              <span class="tag">
+                HLS
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Internships -->
+      <section class="section">
+        <p class="section-label">Internships</p>
+
+        <div class="entry reveal">
+          <div class="entry-date">02/2026 – 06/2026</div>
+          <div class="entry-body">
+            <div class="entry-title">LNS on a RISC-V SoC via High Level Synthesis</div>
+
+            <div class="entry-sub">INESC TEC · Porto, Portugal</div>
+
+            <div class="entry-desc">
+              <ul>
+                <li>
+                  Developed an API for LNS data formats with custom RISC-V instruction compilation and
+                  simulation-based types for arithmetic, comparisons and conversions between LNS and BFloat/Float.
+                </li>
+                <li>
+                  Validated the API against Float and BFloat on a small transformer-based LLM
+                  and extended the LNSU in RISC++ with new comparison and conversion instructions.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tags" style="margin-top: 0.75rem;">
+              <span class="tag">
+                C++
+              </span>
+              <span class="tag">
+                HLS
+              </span>
+              <span class="tag">
+                RISC-V
+              </span>
+              <span class="tag">
+                LNS
+              </span>
+              <span class="tag">
+                FPGA
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="entry reveal">
+          <div class="entry-date">06/2025 – 07/2025</div>
+          <div class="entry-body">
+            <div class="entry-title">
+              AI Acceleration on a RISC-V SoC via High Level Synthesis
+              <span class="badge badge-success" style="margin-left:8px;">
+                Best CTM Internship
+              </span>
+            </div>
+
+            <div class="entry-sub">INESC TEC · Porto, Portugal</div>
+
+            <div class="entry-desc">
+              <ul>
+                <li>
+                  Deployed a Logarithmic Number System Unit (LNSU) to a RISC-V CPU via HLS in C++,
+                  with add/sub approximations using only 192 bytes of lookup tables combined.
+                </li>
+                <li>
+                  Integrated fully into the RISC-V pipeline and tested on FPGA at 125 MHz maximum throughput.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tags" style="margin-top: 0.75rem;">
+              <span class="tag">
+                C++
+              </span>
+              <span class="tag">
+                HLS
+              </span>
+              <span class="tag">
+                RISC-V
+              </span>
+              <span class="tag">
+                FPGA
+              </span>
+              <span class="tag">
+                LNS
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="entry reveal">
+          <div class="entry-date">02/2025 – 06/2025</div>
+          <div class="entry-body">
+            <div class="entry-title">
+              <a 
+                href="https://github.com/UShouldRun/SK-combinators-interpreter"
+                target="_blank"
+                rel="noopener"
+              >
+                Academic Internship: Lambda Calculus Interpreter ↗
+              </a>
+            </div>
+
+            <div class="entry-sub">FCUP · Porto, Portugal</div>
+
+            <div class="entry-desc">
+              Implemented a C interpreter for Lambda Calculus compiled to SK Combinators,
+              combining both theories to build translating and reducing functions over a custom program tree.
+            </div>
+            <div class="tags" style="margin-top: 0.75rem;">
+              <span class="tag">
+                C
+              </span>
+              <span class="tag">
+                Lambda Calculus
+              </span>
+              <span class="tag">
+                Compilers
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Other -->
+      <section class="section">
+        <p class="section-label">Other</p>
+
+        <div class="entry reveal">
+          <div class="entry-date">02/2025 – Now</div>
+          <div class="entry-body">
+            <div class="entry-title">
+              <a 
+                href="https://www.javardemica.org"
+                target="_blank"
+                rel="noopener"
+              >
+                Web Application Developer: Javardémica ↗
+              </a>
+              <span class="badge badge-info" style="margin-left:8px;">
+                Current
+              </span>
+            </div>
+
+            <div class="entry-sub">Tuna de Ciências do Porto · Porto, Portugal</div>
+            <div class="entry-desc">
+              <ul>
+                <li>
+                  Co-developed and maintain a full-stack platform to manage events, members, instruments 
+                  and organizational workflow for a student musical group, automating previously manual processes.
+                </li>
+                <li>
+                  Informally act as technical lead: managing a team of 8 student contributors,
+                  handling onboarding, development workflow and all networking and self-hosting
+                  infrastructure with Cloudflare Tunnel.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tags" style="margin-top: 0.75rem;">
+              <span class="tag">
+                React
+              </span>
+              <span class="tag">
+                Go
+              </span>
+              <span class="tag">
+                MySQL
+              </span>
+              <span class="tag">
+                Docker
+              </span>
+              <span class="tag">
+                Cloudflare
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Papers -->
+      <section class="section">
+        <p class="section-label">Papers</p>
+
+        <div class="entry reveal">
+          <div class="entry-date">2026</div>
+          <div class="entry-body">
+            <div class="entry-title">Logarithmic Number System Extension on an HLS-Based RISC-V SoC</div>
+
+            <div class="entry-sub">INESC TEC (Under Review)</div>
+
+            <div class="entry-desc">
+              <ul>
+                <li>
+                  Designed a 16-bit LNSU for the RISC++ core achieving up to 45% fewer LUTs, 58% fewer DSPs
+                  and 29–36% higher clock frequencies vs. IEEE-754 FPU on a Zynq-7020 FPGA.
+                </li>
+                <li>
+                  95.99% MNIST accuracy with direct FP32-to-LNS16 conversion and no retraining.
+                  Co-authored with Guilherme de Oliveira, José Paradela, Luís Miguel Sousa and Nuno Paulino.
+                </li>
+              </ul>
+            </div>
+            <div class="tags" style="margin-top: 0.75rem;">
+              <span class="tag">
+                HLS
+              </span>
+              <span class="tag">
+                RISC-V
+              </span>
+              <span class="tag">
+                LNS
+              </span>
+              <span class="tag">
+                FPGA
+              </span>
+              <span class="tag">
+                C++
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 
+        <div class="entry reveal">
+          <div class="entry-date">06/2026</div>
+          <div class="entry-body">
+            <div class="entry-title">GNN-Guided Partitioning of Data-Flow Graphs onto CGRAs</div>
+
+            <div class="entry-sub">INESC TEC</div>
+
+            <div class="entry-desc">
+              <ul>
+                <li>
+                  GNN classifier predicts per-node partition assignments seeding a topology-aware partitioner,
+                  achieving ~30% reduction in edge cuts and 98% mapping success vs. 15% for greedy baselines.
+                </li>
+                <li>
+                  ~50× faster than exact SAT solver at ~0.21 s per graph.
+                  Co-authored with Deniz Lopes Gunes, Guilherme de Oliveira and Nuno Paulino.
+                </li>
+              </ul>
+            </div>
+            <div class="tags" style="margin-top: 0.75rem;">
+              <span class="tag">
+                GNN
+              </span>
+              <span class="tag">
+                CGRA
+              </span>
+              <span class="tag">
+                Graph Partitioning
+              </span>
+              <span class="tag">
+                SAT
+              </span>
+            </div>
+          </div>
+        </div>
+        -->
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>

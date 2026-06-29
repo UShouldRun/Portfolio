@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Projects · Henrique Teixeira</title>
+
+  <link 
+    rel="icon"
+    href="
+      data:image/svg+xml,
+      <svg xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 100 100'><text x='0%' y='80%' font-size='70' font-weight='600'
+        font-family='sans-serif' fill='%2393bfeb'>HT</text></svg>
+      "
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/sidebar-component.js" defer></script>
+</head>
+<body>
+  <div class="layout">
+
+    <app-sidebar></app-sidebar>
+
+    <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open navigation">
+      <svg viewBox="0 0 24 24">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+
+    <main class="main">
+
+      <div class="page-header animate-fade-up">
+        <h2>Projects</h2>
+        <p>Personal and open-source work outside of research.</p>
+      </div>
+
+      <section class="section">
+        <p class="section-label">Systems &amp; Infrastructure</p>
+        <div class="card-grid">
+
+          <div class="card reveal">
+            <div class="card-header">
+              <div class="card-title">Lightweight Cloud Job Platform</div>
+              <a 
+                href="https://github.com/johnpierrre/CloudComputing"
+                target="_blank" rel="noopener" class="card-link" aria-label="View on GitHub"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+
+            <p class="card-desc">
+              CLI-driven platform on GCP submitting shell commands as jobs on auto-provisioned GCE worker VMs.
+              FastAPI backend, Redis queue, autoscaler daemon with scale-to-zero, JWT auth and IAP tunneling.
+            </p>
+
+            <div class="tags">
+              <span class="tag">
+                Python
+              </span>
+              <span class="tag">
+                FastAPI
+              </span>
+              <span class="tag">
+                GCP
+              </span>
+              <span class="tag">
+                Redis
+              </span>
+              <span class="tag">
+                Docker
+              </span>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-header">
+              <div class="card-title">Memory Allocator Library</div>
+              <a 
+                href="https://github.com/UShouldRun/Memory-Allocators"
+                target="_blank" rel="noopener" class="card-link" aria-label="View on GitHub"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+
+            <p class="card-desc">
+              Custom C library with two allocators: Arena (O(1) linear) and Pool (best-fit, O(F)) with coalescing,
+              realloc and strdup support. Used in the Kotlin Compiler and SK Interpreter.
+            </p>
+
+            <div class="tags">
+              <span class="tag">
+                C
+              </span>
+              <span class="tag">
+                Memory
+              </span>
+              <span class="tag">
+                Systems
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-label">Compilers &amp; Languages</p>
+        <div class="card-grid">
+
+          <div class="card reveal">
+            <div class="card-header">
+              <div class="card-title">Kotlin Compiler</div>
+              <a 
+                href="https://github.com/UShouldRun/Kotlin-Compiler"
+                target="_blank" rel="noopener" class="card-link" aria-label="View on GitHub"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+
+            <p class="card-desc">
+              Compiler for a subset of Kotlin — statements, expressions, enums, functions — targeting MIPS assembly.
+            </p>
+
+            <div class="tags">
+              <span class="tag">
+                C
+              </span>
+              <span class="tag">
+                Kotlin
+              </span>
+              <span class="tag">
+                MIPS
+              </span>
+              <span class="tag">
+                Compilers
+              </span>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-header">
+              <div class="card-title">RISC-V Assembler</div>
+              <a 
+                href="https://github.com/UShouldRun/RISC-V-Assembler"
+                target="_blank" rel="noopener" class="card-link" aria-label="View on GitHub"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+
+            <p class="card-desc">
+              Assembler for RISC-V supporting the full 32IM instruction set plus custom LNSU instructions
+              developed during the INESC TEC internship.
+            </p>
+
+            <div class="tags">
+              <span class="tag">
+                C
+              </span>
+              <span class="tag">
+                RISC-V
+              </span>
+              <span class="tag">
+                Assembly
+              </span>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-header">
+              <div class="card-title">Lambda Calculus → SK Interpreter</div>
+              <a 
+                href="https://github.com/UShouldRun/SK-combinators-interpreter"
+                target="_blank" rel="noopener" class="card-link" aria-label="View on GitHub"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+
+            <p class="card-desc">
+              C interpreter for Lambda Calculus compiled to SK Combinators, with a custom program tree and
+              both translating and reducing functions.
+            </p>
+
+            <div class="tags">
+              <span class="tag">
+                C
+              </span>
+              <span class="tag">
+                Lambda Calculus
+              </span>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-header">
+              <div class="card-title">LNS Library</div>
+              <a 
+                href="https://github.com/specs-feup/LNS-Library"
+                target="_blank" rel="noopener" class="card-link" aria-label="View on GitHub"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+
+            <p class="card-desc">
+              C++ library implementing 8-bit and 16-bit Logarithmic Number System arithmetic,
+              with exact multiply/divide via exponent addition, spline-based LUT approximation for add/sub
+              and both a hardware compiler header (custom RISC-V instructions)
+              and a software simulation API for benchmarking against float32 and bfloat16.
+            </p>
+
+            <div class="tags">
+              <span class="tag">C++</span>
+              <span class="tag">RISC-V</span>
+              <span class="tag">LNS</span>
+              <span class="tag">HLS</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-label">Web</p>
+        <div class="card-grid">
+
+          <div class="card reveal">
+            <div class="card-header">
+              <div class="card-title">Tuna de Ciências do Porto</div>
+              <a href="https://www.javardemica.org" target="_blank" rel="noopener" class="card-link" aria-label="Visit site">
+                <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+
+            <p class="card-desc">
+              Full-stack platform for a student musical group of ~66 active members. Manages events, members,
+              instruments and financial data. Self-hosted with Cloudflare Tunnel, JWT auth and a team of 8 contributors.
+            </p>
+
+            <div class="tags">
+              <span class="tag">
+                React
+              </span>
+              <span class="tag">
+                Go
+              </span>
+              <span class="tag">
+                MySQL
+              </span>
+              <span class="tag">
+                Docker
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
