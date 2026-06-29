@@ -1,0 +1,95 @@
+/* animations.css — entrance animations, transitions, theme toggle */
+
+/* ── Page fade-in ── */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.4s ease both;
+}
+
+.animate-fade-up:nth-child(1) { animation-delay: 0ms; }
+.animate-fade-up:nth-child(2) { animation-delay: 60ms; }
+.animate-fade-up:nth-child(3) { animation-delay: 120ms; }
+.animate-fade-up:nth-child(4) { animation-delay: 180ms; }
+.animate-fade-up:nth-child(5) { animation-delay: 240ms; }
+.animate-fade-up:nth-child(6) { animation-delay: 300ms; }
+
+/* ── Scroll reveal (JS-driven) ── */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── Theme toggle button ── */
+
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 6px 8px;
+  cursor: pointer;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition), border-color var(--transition), background var(--transition);
+}
+
+.theme-toggle:hover {
+  color: var(--text);
+  border-color: var(--text-dim);
+  background: var(--bg-surface);
+}
+
+.theme-toggle svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform var(--transition-slow);
+}
+
+/* sun icon hidden in dark mode, shown in light */
+.icon-sun  { display: none; }
+.icon-moon { display: block; }
+
+[data-theme="light"] .icon-sun  { display: block; }
+[data-theme="light"] .icon-moon { display: none; }
+
+/* ── Active nav indicator ── */
+
+.sidebar-nav a {
+  position: relative;
+}
+
+.sidebar-nav a.active::before {
+  content: '';
+  position: absolute;
+  left: -1.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 60%;
+  background: var(--accent);
+  border-radius: 0 2px 2px 0;
+}
