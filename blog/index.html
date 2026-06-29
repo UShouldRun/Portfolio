@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Blog · Henrique Teixeira</title>
+
+  <link 
+    rel="icon"
+    href="
+      data:image/svg+xml,
+      <svg xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 100 100'><text x='0%' y='80%' font-size='70' font-weight='600'
+        font-family='sans-serif' fill='%2393bfeb'>HT</text></svg>
+      "
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/sidebar-component.js" defer></script>
+</head>
+<body>
+  <div class="layout">
+
+    <app-sidebar></app-sidebar>
+
+    <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open navigation">
+      <svg viewBox="0 0 24 24">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+
+    <main class="main">
+
+      <div class="page-header animate-fade-up">
+        <h2>Blog</h2>
+        <!-- <p>Writing on systems, hardware and things I find interesting.</p> -->
+      </div>
+
+      <section class="section animate-fade-up">
+        <div style="
+          border: 1px dashed var(--border);
+          border-radius: var(--radius-lg);
+          padding: 3rem 2rem;
+          text-align: center;
+          color: var(--text-dim);
+        ">
+          <p 
+            style="font-family: var(--font-mono); font-size: 0.8rem;
+            margin-bottom: 0.5rem; color: var(--text-dim);"
+          >
+            Coming soon...
+          </p>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">
+            Nothing here yet: posts on software, compilers
+            and other things I build will show up here eventually.
+          </p>
+        </div>
+      </section>
+
+      <!--
+      BLOG POSTS — uncomment and duplicate this block when ready:
+
+      <section class="section">
+        <p class="section-label">Posts</p>
+
+        <div class="entry reveal">
+          <div class="entry-date">MM/YYYY</div>
+          <div class="entry-body">
+            <div class="entry-title"><a href="posts/my-post.html">Post title</a></div>
+            <div class="entry-sub">Short subtitle or topic</div>
+            <div class="entry-desc">One sentence summary of what the post covers.</div>
+          </div>
+        </div>
+
+      </section>
+      -->
+
+    </main>
+  </div>
+</body>
+</html>
