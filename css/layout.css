@@ -112,7 +112,7 @@
 }
 
 .cv-download:hover, .theme-toggle:hover {
-  background-color: var(--hover-bg-color); /* Subtle background highlight on mouse hover */
+  background-color: var(--bg-surface); /* Subtle background highlight on mouse hover */
 }
 
 .sidebar-socials {
@@ -149,7 +149,7 @@
   margin-left: var(--nav-width);
   flex: 1;
   padding: 3rem 4rem;
-  max-width: calc(var(--nav-width) + var(--content-max) + 8rem);
+  max-width: calc(var(--content-max) + 8rem);
 }
 
 .page-header {
@@ -164,7 +164,7 @@
 }
 
 .page-header p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 /* ── Mobile nav toggle ── */
