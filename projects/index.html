@@ -70,7 +70,7 @@
 
             <p class="card-desc">
               CLI-driven platform on GCP submitting shell commands as jobs on auto-provisioned GCE worker VMs.
-              FastAPI backend, Redis queue, autoscaler daemon with scale-to-zero, JWT auth and IAP tunneling.
+              FastAPI backend, Redis queue, autoscaler daemon with scale-to-zero, JWT auth, rate limiting and IAP tunneling.
             </p>
 
             <div class="tags">
@@ -257,6 +257,145 @@
               <span class="tag">RISC-V</span>
               <span class="tag">LNS</span>
               <span class="tag">HLS</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-label">Machine Learning &amp; Data Science</p>
+        <div class="card-grid">
+
+          <div class="card reveal">
+            <div class="card-header">
+              <div class="card-title">Autonomous Driving: DQN vs PPO</div>
+              <a 
+                href="https://github.com/UShouldRun/Autonomous-Driving"
+                target="_blank" rel="noopener" class="card-link" aria-label="View on GitHub"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+
+            <p class="card-desc">
+              Trained DQN and PPO agents for lane-following and obstacle avoidance in Webots using a custom multi-branch CNN
+              (LaneCNN) fusing Camera and LiDAR inputs. PPO achieved 60% success on unseen tracks vs. 0% for DQN.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">RL</span>
+              <span class="tag">Webots</span>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-header">
+              <div class="card-title">UrbanSound8K Audio Classification</div>
+              <a 
+                href="https://github.com/UShouldRun/UrbanSound8K-DeepLearning-Classification"
+                target="_blank" rel="noopener" class="card-link" aria-label="View on GitHub"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+
+            <p class="card-desc">
+              MLP and CNN classifiers for 10-class urban sound classification on UrbanSound8K, evaluated via 10-fold
+              cross-validation with librosa-based feature extraction.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">librosa</span>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-header">
+              <div class="card-title">Lung Cancer Classification</div>
+              <a 
+                href="https://github.com/UShouldRun/Lung-Cancer-Classification"
+                target="_blank" rel="noopener" class="card-link" aria-label="View on GitHub"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+
+            <p class="card-desc">
+              Deep learning classifiers for lung cancer detection from CT scan data.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">Medical Imaging</span>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-header">
+              <div class="card-title">Robust Naive Bayes</div>
+              <a 
+                href="https://github.com/UShouldRun/Machine-Learning-Project"
+                target="_blank" rel="noopener" class="card-link" aria-label="View on GitHub"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+
+            <p class="card-desc">
+              Modified and benchmarked a from-scratch Naive Bayes classifier (no scikit-learn) to improve robustness to
+              multiclass imbalance, compared against the standard implementation across multiple datasets.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">NumPy</span>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-header">
+              <div class="card-title">Connect Four: MCTS &amp; Decision Tree AI</div>
+              <a 
+                href="https://github.com/UShouldRun/AI-Project"
+                target="_blank" rel="noopener" class="card-link" aria-label="View on GitHub"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+
+            <p class="card-desc">
+              MCTS with UCT and a Decision Tree (ID3) trained on MCTS self-play data, with a bitboard game state representation.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">MCTS</span>
             </div>
           </div>
         </div>

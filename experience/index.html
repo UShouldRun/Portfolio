@@ -54,7 +54,7 @@
         <p class="section-label">Research</p>
 
         <div class="entry reveal">
-          <div class="entry-date">02/2026 – 07/2026</div>
+          <div class="entry-date">02/2026 – Now</div>
           <div class="entry-body">
             <div class="entry-title">
               Researcher: AIMaCoV 
@@ -68,17 +68,18 @@
             <div class="entry-desc">
               <ul>
                 <li>
-                  Mentoring an undergraduate student alongside a colleague on their
-                  curricular internship in compiler-time NN approaches for CGRA mapping.
+                  Proactively advocated to lead a new research initiative, mentoring
+                  2 undergraduate interns on pipeline management and algorithmic strategy.
                 </li>
                 <li>
-                  Co-authoring a paper (06/2026) introducing a GNN-guided partitioning 
-                  flow for Data-Flow Graphs onto CGRAs: ~30% reduction in edge cuts,
-                  98% mapping success rate, ~50× speedup over exact SAT solvers.
+                  Guided the design of a GNN-guided DFG partitioning flow for mapping ONNX
+                  computation graphs onto a RISC-V spatial CGRA, learning optimal
+                  partitions from SAT-generated ground truth.
                 </li>
                 <li>
-                  Guided the intern in combining deterministic algorithms with learned heuristics
-                  for an NP-hard mapping problem.
+                  Mentored work achieved ~33% edge-cut reduction over the unguided baseline,
+                  98% mapping success vs. 15% for greedy list scheduling and ~50×
+                  speedup over exact SAT (~0.25 s/graph).
                 </li>
               </ul>
             </div>
@@ -145,19 +146,34 @@
         <div class="entry reveal">
           <div class="entry-date">02/2026 – 06/2026</div>
           <div class="entry-body">
-            <div class="entry-title">LNS on a RISC-V SoC via High Level Synthesis</div>
+            <div class="entry-title">
+              <a 
+                href="https://github.com/specs-feup/LNS-Library"
+                target="_blank"
+                rel="noopener"
+              >
+                LNS on a RISC-V SoC via High Level Synthesis ↗
+              </a>
+            </div>
 
             <div class="entry-sub">INESC TEC · Porto, Portugal</div>
 
             <div class="entry-desc">
               <ul>
                 <li>
-                  Developed an API for LNS data formats with custom RISC-V instruction compilation and
-                  simulation-based types for arithmetic, comparisons and conversions between LNS and BFloat/Float.
+                  Extended a prior LNSU implementation by adding comparison operations and
+                  FP/BF ↔ LNS conversion functions, approximated via greedy-generated linear
+                  splines with analytically derived error bounds.
                 </li>
                 <li>
-                  Validated the API against Float and BFloat on a small transformer-based LLM
-                  and extended the LNSU in RISC++ with new comparison and conversion instructions.
+                  Built a header-only C++ LNS emulation library (lnssim.hpp) with XF and XMB
+                  spline backends, supporting lns8 Q4.3 and lns16 Q8.7 and a matching BF
+                  emulator (bfloatsim.hpp) for direct benchmarking.
+                </li>
+                <li>
+                  Validated lns16 Q8.7 for Llama 2 inference: direct fp32 → lns16 weight
+                  conversion without retraining produced coherent text on TinyStories 15M
+                  and 42M, with hybrid fp32 accumulation isolating LNS to matrix multiplications.
                 </li>
               </ul>
             </div>
@@ -201,7 +217,7 @@
                   with add/sub approximations using only 192 bytes of lookup tables combined.
                 </li>
                 <li>
-                  Integrated fully into the RISC-V pipeline and tested on FPGA at 125 MHz maximum throughput.
+                  Integrated into the RISC-V pipeline and tested on FPGA at 125 MHz.
                 </li>
               </ul>
             </div>
@@ -289,8 +305,11 @@
                 </li>
                 <li>
                   Informally act as technical lead: managing a team of 8 student contributors,
-                  handling onboarding, development workflow and all networking and self-hosting
-                  infrastructure with Cloudflare Tunnel.
+                  handling onboarding, development workflow and self-hosting infrastructure
+                  with Cloudflare Tunnel and JWT authentication.
+                </li>
+                <li>
+                  Built with React (Vite), Go and MySQL, containerized with Docker Compose.
                 </li>
               </ul>
             </div>
@@ -321,6 +340,43 @@
         <p class="section-label">Papers</p>
 
         <div class="entry reveal">
+          <div class="entry-date">09/2026</div>
+          <div class="entry-body">
+            <div class="entry-title">GNN-Guided Graph Partitioning for Spatial CGRA Mapping</div>
+
+            <div class="entry-sub">INForum 2026 (CPDLA)</div>
+
+            <div class="entry-desc">
+              <ul>
+                <li>
+                  GNN-guided DFG partitioning flow for mapping ONNX computation graphs onto a RISC-V spatial CGRA,
+                  achieving ~33% edge-cut reduction and 98% mapping success vs. 15% for greedy list scheduling.
+                </li>
+                <li>
+                  ~50× faster than exact SAT at ~0.25 s per graph.
+                  Co-authored with Deniz Lopes Günes, Guilherme Vareiro de Oliveira and Nuno Paulino.
+                </li>
+              </ul>
+            </div>
+            <div class="tags" style="margin-top: 0.75rem;">
+              <span class="tag">
+                GNN
+              </span>
+              <span class="tag">
+                CGRA
+              </span>
+              <span class="tag">
+                Graph Partitioning
+              </span>
+              <span class="tag">
+                SAT
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!--
+        <div class="entry reveal">
           <div class="entry-date">2026</div>
           <div class="entry-body">
             <div class="entry-title">Logarithmic Number System Extension on an HLS-Based RISC-V SoC</div>
@@ -338,60 +394,6 @@
                   Co-authored with Guilherme de Oliveira, José Paradela, Luís Miguel Sousa and Nuno Paulino.
                 </li>
               </ul>
-            </div>
-            <div class="tags" style="margin-top: 0.75rem;">
-              <span class="tag">
-                HLS
-              </span>
-              <span class="tag">
-                RISC-V
-              </span>
-              <span class="tag">
-                LNS
-              </span>
-              <span class="tag">
-                FPGA
-              </span>
-              <span class="tag">
-                C++
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 
-        <div class="entry reveal">
-          <div class="entry-date">06/2026</div>
-          <div class="entry-body">
-            <div class="entry-title">GNN-Guided Partitioning of Data-Flow Graphs onto CGRAs</div>
-
-            <div class="entry-sub">INESC TEC</div>
-
-            <div class="entry-desc">
-              <ul>
-                <li>
-                  GNN classifier predicts per-node partition assignments seeding a topology-aware partitioner,
-                  achieving ~30% reduction in edge cuts and 98% mapping success vs. 15% for greedy baselines.
-                </li>
-                <li>
-                  ~50× faster than exact SAT solver at ~0.21 s per graph.
-                  Co-authored with Deniz Lopes Gunes, Guilherme de Oliveira and Nuno Paulino.
-                </li>
-              </ul>
-            </div>
-            <div class="tags" style="margin-top: 0.75rem;">
-              <span class="tag">
-                GNN
-              </span>
-              <span class="tag">
-                CGRA
-              </span>
-              <span class="tag">
-                Graph Partitioning
-              </span>
-              <span class="tag">
-                SAT
-              </span>
             </div>
           </div>
         </div>
